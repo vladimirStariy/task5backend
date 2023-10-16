@@ -1,5 +1,4 @@
 import { Module } from "@nestjs/common";
-import { Faker } from "@faker-js/faker";
 import { ConfigModule } from "@nestjs/config";
 import { FakeModule } from "./fakeData/fake.module";
 
@@ -8,8 +7,7 @@ import { FakeModule } from "./fakeData/fake.module";
         ConfigModule.forRoot({
             envFilePath: '.env'
         }),
-        FakeModule,
-        Faker
+        FakeModule
     ],
     controllers: [],
     providers: []

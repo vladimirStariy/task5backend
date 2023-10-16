@@ -1,8 +1,9 @@
 import { HttpException, HttpStatus, Injectable, Logger } from '@nestjs/common';
-import { fakerEN_US, fakerRU, fakerPL, fakerTH } from '@faker-js/faker';
 import { FakeDataRequest } from './dto/fake.request.dto';
 import { FakePesronDto } from './dto/fake.person.dto';
 import { corruptData, getRandomizedIndex } from './helpers/corruptor';
+
+const { fakerEN_US, fakerRU, fakerPL } = require('@faker-js/faker')
 
 @Injectable()
 export class FakeService {
