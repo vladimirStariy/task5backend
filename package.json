@@ -27,7 +27,6 @@
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/sequelize": "^10.0.0",
     "@nestjs/swagger": "^7.1.13",
-    "@faker-js/faker": "^8.2.0",
     "bcryptjs": "^2.4.3",
     "mysql2": "^3.6.1",
     "reflect-metadata": "^0.1.13",
@@ -38,6 +37,7 @@
     "swagger-ui-express": "^5.0.0"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.2.0",
     "@nestjs/cli": "^10.0.0",
     "@nestjs/schematics": "^10.0.0",
     "@nestjs/testing": "^10.0.0",
@@ -48,7 +48,6 @@
     "@types/supertest": "^2.0.12",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
-    "@faker-js/faker": "^8.2.0",
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
