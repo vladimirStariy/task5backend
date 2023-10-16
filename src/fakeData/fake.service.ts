@@ -2,8 +2,7 @@ import { HttpException, HttpStatus, Injectable, Logger } from '@nestjs/common';
 import { FakeDataRequest } from './dto/fake.request.dto';
 import { FakePesronDto } from './dto/fake.person.dto';
 import { corruptData, getRandomizedIndex } from './helpers/corruptor';
-
-const { fakerEN_US, fakerRU, fakerPL } = require('@faker-js/faker')
+import { fakerEN_US, fakerRU, fakerPL } from '@faker-js/faker';
 
 @Injectable()
 export class FakeService {
@@ -19,6 +18,7 @@ export class FakeService {
             if(Number.isInteger(fakeRequestDto.errorOffset)) {
                 errorsCount = fakeRequestDto.errorOffset;
             } else {
+                
                 let variantPart = fakeRequestDto.errorOffset - Math.trunc(fakeRequestDto.errorOffset);
                 errorsCount = Math.trunc(fakeRequestDto.errorOffset);
                 const errorSeed = this.generateSeed(fakeRequestDto.errorOffset * resultSeed);
